@@ -2,20 +2,7 @@
 
 #include <cassert>
 
-I18n::Dict english = {
-    {I18n::Key::ASK_KEY_MAP, "Keymap mode: 1 WASD 2 VIM"},
-    {I18n::Key::INPUT_ERROR, "Input error!"},
-    {I18n::Key::LOAD_PROGRESS_FAIL, "Load progress failed!"},
-    {I18n::Key::ASK_QUIT, "Quit game? [Y/N]"},
-    {I18n::Key::ASK_SAVE, "Do you want to save the game progress? [Y/N]"},
-    {I18n::Key::ASK_SAVE_PATH, "Input path of the progress file:"},
-    {I18n::Key::FILE_EXIST_ERROR, "This file is already exist."},
-    {I18n::Key::CONTINUE, "Continue."},
-    {I18n::Key::UNDO_ERROR, "No more action to undo."},
-    {I18n::Key::CONGRATULATION, "Congratulation! You Win!"},
-    {I18n::Key::NOT_COMPLETED, "Sorry, not completed."},
-    {I18n::Key::ASK_DIFFICULTY, "Select difficulty: 1 Easy 2 Normal 3 Hard"},
-};
+
 I18n::Dict chinese = {
     {I18n::Key::ASK_KEY_MAP, "设置按键模式: 1 WASD 2 VIM"},
     {I18n::Key::INPUT_ERROR, "输入错误!"},

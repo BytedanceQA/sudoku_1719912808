@@ -65,21 +65,3 @@ KeyMode inputKeyMode() {
   } while (true);
 }
 
-void InputLanguage() {
-  std::string language;
-  do {
-    message("1English 2中文");
-    std::cin >> language;
-
-    try {
-      auto l = static_cast<Language>(std::stoul(language) - 1);
-      if (l < Language::MAX) {
-        I18n::Instance().SetLanguage(l);
-        return;
-      }
-    } catch (...) {
-    }
-
-    message(I18n::Instance().Get(I18n::Key::INPUT_ERROR));
-  } while (true);
-}
